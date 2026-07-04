@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
@@ -30,10 +30,49 @@
       "path": "README.md",
       "parentId": null,
       "order": 0,
+      "children": [
+        "artificial-intelligence"
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "title": "Trí tuệ nhân tạo (AI)",
+      "slug": "artificial-intelligence",
+      "type": "domain",
+      "path": "artificial-intelligence/README.md",
+      "parentId": "knowledge-tree",
+      "order": 1,
+      "children": [
+        "large-language-models"
+      ]
+    },
+    {
+      "id": "large-language-models",
+      "title": "Mô hình ngôn ngữ lớn (LLM)",
+      "slug": "large-language-models",
+      "type": "category",
+      "path": "artificial-intelligence/large-language-models/README.md",
+      "parentId": "artificial-intelligence",
+      "order": 1,
+      "children": [
+        "retrieval-augmented-generation"
+      ]
+    },
+    {
+      "id": "retrieval-augmented-generation",
+      "title": "RAG (Retrieval-Augmented Generation)",
+      "slug": "retrieval-augmented-generation",
+      "type": "concept",
+      "path": "artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md",
+      "parentId": "large-language-models",
+      "order": 1,
       "children": []
     }
   ],
   "pathIndex": {
-    "README.md": "knowledge-tree"
+    "README.md": "knowledge-tree",
+    "artificial-intelligence/README.md": "artificial-intelligence",
+    "artificial-intelligence/large-language-models/README.md": "large-language-models",
+    "artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md": "retrieval-augmented-generation"
   }
 }
