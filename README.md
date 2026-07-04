@@ -20,6 +20,12 @@ knowledge-tree/
 
 Tên thư mục dùng `kebab-case`, không dấu. Nội dung hiển thị bằng tiếng Việt được định nghĩa trong từng README và `metadata.json`.
 
+## Khám phá cây kiến thức
+
+- [Trí tuệ nhân tạo (Artificial Intelligence, AI)](artificial-intelligence/README.md)
+  - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](artificial-intelligence/large-language-models/README.md)
+    - [RAG (Retrieval-Augmented Generation)](artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md)
+
 ## Metadata và điều hướng
 
 `metadata.json` ở thư mục gốc là nguồn dữ liệu cho cây kiến thức. Mỗi node khai báo `id`, `title`, `slug`, `type`, `path`, `parentId`, `order` và `children`.
