@@ -15,25 +15,26 @@ Mỗi khái niệm có:
 knowledge-tree/
 ├── README.md
 ├── metadata.json
-└── {linh-vuc}/{linh-vuc-con}/.../{khai-niem}/README.md
+└── {domain}/{category}/.../{concept}/README.md
 ```
 
-Tên thư mục dùng `kebab-case`, không dấu. Nội dung hiển thị bằng tiếng Việt được định nghĩa trong từng README và `metadata.json`.
+Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ viết tắt tiếng Anh phổ biến trong ngành, URL dùng chính từ viết tắt đó; nếu không có, dùng tên đầy đủ dạng `kebab-case`.
 
 ## Khám phá cây kiến thức
 
-- [Trí tuệ nhân tạo (Artificial Intelligence, AI)](artificial-intelligence/README.md)
-  - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](artificial-intelligence/large-language-models/README.md)
-    - [RAG (Retrieval-Augmented Generation)](artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md)
+- [Trí tuệ nhân tạo (Artificial Intelligence, AI)](ai/README.md)
+  - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](ai/llm/README.md)
+    - [RAG (Retrieval-Augmented Generation)](ai/llm/rag/README.md)
 
-## Quy ước thuật ngữ
+## Quy ước thuật ngữ và URL
 
 Dùng các từ viết tắt tiếng Anh phổ biến trong ngành khi chúng là tên khái niệm hoặc định danh ổn định, ví dụ: `ai`, `llm`, `rag`, `api`, `db`, `ui`, `ux`.
 
 - Giải thích tên đầy đủ ở lần xuất hiện đầu tiên, ví dụ: *Retrieval-Augmented Generation (RAG)*.
 - Không tự tạo từ viết tắt mơ hồ.
-- `id` có thể dùng viết tắt chuyên ngành phổ biến như `ai`, `llm`, `rag`.
-- Tên thư mục và đường dẫn README vẫn dùng `kebab-case` đầy đủ, ổn định và dễ đọc.
+- Nếu một thuật ngữ có từ viết tắt chuyên ngành phổ biến, **phải dùng** dạng viết tắt chữ thường cho `id`, `slug`, tên thư mục và URL: `ai/llm/rag`.
+- Nếu không có từ viết tắt phổ biến, dùng tên đầy đủ dạng `kebab-case`, ví dụ `clean-architecture`.
+- Không rút gọn tên field của `metadata.json`; chỉ rút gọn định danh của khái niệm khi đó là thuật ngữ chuẩn.
 
 ## Metadata
 
@@ -57,14 +58,14 @@ Các field của một node:
 | --- | --- |
 | `id` | Định danh duy nhất, có thể dùng từ viết tắt phổ biến như `ai`, `llm`, `rag`. |
 | `title` | Tên hiển thị bằng tiếng Việt, kèm thuật ngữ tiếng Anh khi cần. |
-| `slug` | Tên định danh dạng `kebab-case`. |
+| `slug` | Segment URL và tên thư mục của node. |
 | `type` | Loại node: `root`, `domain`, `category` hoặc `concept`. |
 | `path` | Đường dẫn tới `README.md` của node. |
 | `parentId` | ID của node cha; node gốc dùng `null`. |
 | `order` | Thứ tự hiển thị giữa các node cùng cấp. |
 | `children` | Danh sách ID các node con. |
 
-Metadata mô tả cấu trúc cây; không cần lưu các field viết tắt riêng cho navigation. Giao diện hoặc công cụ có thể suy ra node cha, node con và thứ tự cùng cấp từ `parentId`, `children` và `order`.
+Metadata mô tả cấu trúc cây. Giao diện hoặc công cụ có thể suy ra node cha, node con và thứ tự cùng cấp từ `parentId`, `children` và `order`.
 
 ## Điều hướng (Navigation)
 
@@ -92,12 +93,6 @@ Ví dụ:
 
 Các liên kết trong phần điều hướng phải khớp với cấu trúc được khai báo bằng `parentId`, `children` và `order` trong `metadata.json`.
 
-Ví dụ đường dẫn:
-
-```text
-software-engineering/architecture/clean-architecture/README.md
-```
-
 ## Đóng góp
 
-Khi thêm hoặc di chuyển một khái niệm, hãy cập nhật README của khái niệm và `metadata.json` trong cùng commit.
+Khi thêm hoặc di chuyển một khái niệm, hãy cập nhật README của khái niệm, các liên kết điều hướng và `metadata.json` trong cùng commit.

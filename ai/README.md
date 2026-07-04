@@ -9,9 +9,9 @@ Trí tuệ nhân tạo (*Artificial Intelligence — AI*) là lĩnh vực xây d
 ## Điều hướng
 
 - **Node cha:** [Knowledge Tree](../README.md)
-- **Node con:** [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](large-language-models/README.md)
+- **Node con:** [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](llm/README.md)
 - **Khái niệm trước / sau trong nhánh:** Chưa có node cùng cấp để điều hướng.
 
 ## Nhánh con
 
-1. [Mô hình ngôn ngữ lớn (LLM)](large-language-models/README.md) — Các mô hình xử lý và sinh ngôn ngữ tự nhiên ở quy mô lớn.
+1. [Mô hình ngôn ngữ lớn (LLM)](llm/README.md) — Các mô hình xử lý và sinh ngôn ngữ tự nhiên ở quy mô lớn.

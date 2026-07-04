@@ -9,9 +9,9 @@
 ## Điều hướng
 
 - **Node cha:** [Trí tuệ nhân tạo (AI)](../README.md)
-- **Node con:** [RAG (Retrieval-Augmented Generation)](retrieval-augmented-generation/README.md)
+- **Node con:** [RAG (Retrieval-Augmented Generation)](rag/README.md)
 - **Khái niệm trước / sau trong nhánh:** Chưa có node cùng cấp để điều hướng.
 
 ## Nhánh con
 
-1. [RAG (Retrieval-Augmented Generation)](retrieval-augmented-generation/README.md) — Kết hợp truy xuất tri thức với sinh câu trả lời từ LLM.
+1. [RAG (Retrieval-Augmented Generation)](rag/README.md) — Kết hợp truy xuất tri thức với sinh câu trả lời từ LLM.
