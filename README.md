@@ -26,28 +26,71 @@ Tên thư mục dùng `kebab-case`, không dấu. Nội dung hiển thị bằng
   - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](artificial-intelligence/large-language-models/README.md)
     - [RAG (Retrieval-Augmented Generation)](artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md)
 
-## Quy ước viết tắt cho metadata và navigation
+## Quy ước thuật ngữ
 
-`metadata.json` dùng các từ viết tắt tiếng Anh đã phổ biến trong ngành để dữ liệu ngắn gọn và ổn định. Ưu tiên viết thường, ví dụ: `ai`, `llm`, `rag`, `api`, `db`, `ui`, `ux`.
+Dùng các từ viết tắt tiếng Anh phổ biến trong ngành khi chúng là tên khái niệm hoặc định danh ổn định, ví dụ: `ai`, `llm`, `rag`, `api`, `db`, `ui`, `ux`.
 
-- Chỉ dùng từ viết tắt đã thông dụng hoặc được định nghĩa rõ tại node đầu tiên; không tự tạo viết tắt mơ hồ.
-- `id` của khái niệm ưu tiên viết tắt chuyên ngành: `ai`, `llm`, `rag`.
-- Đường dẫn file vẫn dùng `kebab-case` đầy đủ trong `p` và `pi`; không đổi đường dẫn chỉ để rút ngắn metadata.
-- `nav` dùng các key: `bc` (*breadcrumb*), `up` (*parent*), `pv` (*previous*), `nx` (*next*), `ch` (*children*).
+- Giải thích tên đầy đủ ở lần xuất hiện đầu tiên, ví dụ: *Retrieval-Augmented Generation (RAG)*.
+- Không tự tạo từ viết tắt mơ hồ.
+- `id` có thể dùng viết tắt chuyên ngành phổ biến như `ai`, `llm`, `rag`.
+- Tên thư mục và đường dẫn README vẫn dùng `kebab-case` đầy đủ, ổn định và dễ đọc.
 
-Các key metadata rút gọn:
+## Metadata
 
-| Key | Ý nghĩa |
+`metadata.json` ở thư mục gốc là nguồn dữ liệu của cây kiến thức. Các field trong file này dùng tên đầy đủ, rõ nghĩa; không rút gọn chỉ để giảm số ký tự.
+
+Các field cấp root:
+
+| Field | Ý nghĩa |
 | --- | --- |
-| `v`, `loc`, `r`, `d` | version, locale, root ID, description |
-| `ns`, `n`, `pi` | node schema, nodes, path index |
-| `t`, `k`, `p`, `pid`, `o`, `ch` | title, kind, README path, parent ID, order, children |
+| `version` | Phiên bản schema metadata. |
+| `locale` | Ngôn ngữ hiển thị mặc định, ví dụ `vi-VN`. |
+| `rootId` | ID của node gốc. |
+| `description` | Mô tả ngắn cho metadata. |
+| `nodeSchema` | Quy ước field và loại node được hỗ trợ. |
+| `nodes` | Danh sách toàn bộ node trong cây. |
+| `pathIndex` | Ánh xạ từ đường dẫn README tới `id` của node. |
 
-## Metadata và điều hướng
+Các field của một node:
 
-`metadata.json` ở thư mục gốc là nguồn dữ liệu cho cây kiến thức. Mỗi node dùng `id`, `t`, `k`, `p`, `pid`, `o`, `nav` và `ch`.
+| Field | Ý nghĩa |
+| --- | --- |
+| `id` | Định danh duy nhất, có thể dùng từ viết tắt phổ biến như `ai`, `llm`, `rag`. |
+| `title` | Tên hiển thị bằng tiếng Việt, kèm thuật ngữ tiếng Anh khi cần. |
+| `slug` | Tên định danh dạng `kebab-case`. |
+| `type` | Loại node: `root`, `domain`, `category` hoặc `concept`. |
+| `path` | Đường dẫn tới `README.md` của node. |
+| `parentId` | ID của node cha; node gốc dùng `null`. |
+| `order` | Thứ tự hiển thị giữa các node cùng cấp. |
+| `children` | Danh sách ID các node con. |
 
-Mỗi README của khái niệm cần có breadcrumb, liên kết về node cha, liên kết các node con và điều hướng khái niệm trước/sau trong cùng nhánh. Giá trị của các liên kết này phải khớp với `nav` trong `metadata.json`.
+Metadata mô tả cấu trúc cây; không cần lưu các field viết tắt riêng cho navigation. Giao diện hoặc công cụ có thể suy ra node cha, node con và thứ tự cùng cấp từ `parentId`, `children` và `order`.
+
+## Điều hướng (Navigation)
+
+Điều hướng là một phần nội dung trong từng `README.md` của khái niệm, không chỉ là dữ liệu trong `metadata.json`.
+
+Mỗi README khái niệm cần có mục `## Điều hướng` với:
+
+1. **Breadcrumb**: liên kết từ Knowledge Tree đến node hiện tại.
+2. **Node cha**: liên kết về node cha.
+3. **Node con**: danh sách liên kết tới các node con, khi có.
+4. **Khái niệm trước / sau**: liên kết tới node liền kề cùng cấp, theo `order`.
+
+Ví dụ:
+
+```md
+> [Knowledge Tree](../../../README.md) / [AI](../../README.md) / [LLM](../README.md) / **RAG**
+
+## Điều hướng
+
+- **Node cha:** [LLM](../README.md)
+- **Node con:** Chưa có.
+- **Khái niệm trước trong cùng nhánh:** Chưa có.
+- **Khái niệm sau trong cùng nhánh:** Chưa có.
+```
+
+Các liên kết trong phần điều hướng phải khớp với cấu trúc được khai báo bằng `parentId`, `children` và `order` trong `metadata.json`.
 
 Ví dụ đường dẫn:
 
