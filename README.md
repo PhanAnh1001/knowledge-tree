@@ -26,11 +26,28 @@ Tên thư mục dùng `kebab-case`, không dấu. Nội dung hiển thị bằng
   - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](artificial-intelligence/large-language-models/README.md)
     - [RAG (Retrieval-Augmented Generation)](artificial-intelligence/large-language-models/retrieval-augmented-generation/README.md)
 
+## Quy ước viết tắt cho metadata và navigation
+
+`metadata.json` dùng các từ viết tắt tiếng Anh đã phổ biến trong ngành để dữ liệu ngắn gọn và ổn định. Ưu tiên viết thường, ví dụ: `ai`, `llm`, `rag`, `api`, `db`, `ui`, `ux`.
+
+- Chỉ dùng từ viết tắt đã thông dụng hoặc được định nghĩa rõ tại node đầu tiên; không tự tạo viết tắt mơ hồ.
+- `id` của khái niệm ưu tiên viết tắt chuyên ngành: `ai`, `llm`, `rag`.
+- Đường dẫn file vẫn dùng `kebab-case` đầy đủ trong `p` và `pi`; không đổi đường dẫn chỉ để rút ngắn metadata.
+- `nav` dùng các key: `bc` (*breadcrumb*), `up` (*parent*), `pv` (*previous*), `nx` (*next*), `ch` (*children*).
+
+Các key metadata rút gọn:
+
+| Key | Ý nghĩa |
+| --- | --- |
+| `v`, `loc`, `r`, `d` | version, locale, root ID, description |
+| `ns`, `n`, `pi` | node schema, nodes, path index |
+| `t`, `k`, `p`, `pid`, `o`, `ch` | title, kind, README path, parent ID, order, children |
+
 ## Metadata và điều hướng
 
-`metadata.json` ở thư mục gốc là nguồn dữ liệu cho cây kiến thức. Mỗi node khai báo `id`, `title`, `slug`, `type`, `path`, `parentId`, `order` và `children`.
+`metadata.json` ở thư mục gốc là nguồn dữ liệu cho cây kiến thức. Mỗi node dùng `id`, `t`, `k`, `p`, `pid`, `o`, `nav` và `ch`.
 
-Mỗi README của khái niệm cần có breadcrumb, liên kết về node cha, liên kết các node con và điều hướng khái niệm trước/sau trong cùng nhánh.
+Mỗi README của khái niệm cần có breadcrumb, liên kết về node cha, liên kết các node con và điều hướng khái niệm trước/sau trong cùng nhánh. Giá trị của các liên kết này phải khớp với `nav` trong `metadata.json`.
 
 Ví dụ đường dẫn:
 
