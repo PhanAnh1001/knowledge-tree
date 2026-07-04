@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "locale": "vi-VN",
+  "rootId": "knowledge-tree",
+  "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
+  "nodeSchema": {
+    "required": [
+      "id",
+      "title",
+      "slug",
+      "type",
+      "path",
+      "parentId",
+      "order",
+      "children"
+    ],
+    "types": [
+      "root",
+      "domain",
+      "category",
+      "concept"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "knowledge-tree",
+      "title": "Knowledge Tree",
+      "slug": "knowledge-tree",
+      "type": "root",
+      "path": "README.md",
+      "parentId": null,
+      "order": 0,
+      "children": []
+    }
+  ],
+  "pathIndex": {
+    "README.md": "knowledge-tree"
+  }
+}
