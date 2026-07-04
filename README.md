@@ -4,10 +4,22 @@ Kho kiến thức bằng tiếng Việt, tổ chức theo cây phân cấp (*min
 
 Mỗi khái niệm có:
 
-- 5 câu hỏi và trả lời cốt lõi.
-- 5 câu hỏi và trả lời phổ biến mở rộng.
+- Tối đa 5 câu hỏi và trả lời cốt lõi.
+- Tối đa 8 câu hỏi và trả lời phổ biến mở rộng.
 - Thuật ngữ tiếng Anh khi phù hợp.
 - Hướng dẫn áp dụng, bài toán giải quyết và các liên kết liên quan.
+
+## Quy tắc biên soạn nội dung Q&A
+
+Mỗi README khái niệm phải trình bày nội dung theo dạng hỏi–đáp có chiều sâu, ưu tiên câu hỏi thực tế thay vì chỉ nêu định nghĩa.
+
+1. **Mỗi Q&A cần có câu trả lời rõ ràng và đủ ngữ cảnh.** Giải thích thuật ngữ tiếng Anh ở lần xuất hiện đầu tiên, ví dụ: *Retrieval-Augmented Generation (RAG)*.
+2. **Phải nêu trường hợp áp dụng** bằng các tình huống, loại dữ liệu hoặc nhu cầu thực tế phù hợp với khái niệm.
+3. **Phải nêu bài toán được giải quyết khi có thể**, như giới hạn kỹ thuật, rủi ro vận hành, chất lượng, chi phí hoặc trải nghiệm người dùng mà khái niệm giúp cải thiện.
+4. **Phải so sánh với lựa chọn tương tự khi có ý nghĩa**, làm rõ điểm mạnh, giới hạn và điều kiện chọn giải pháp; ưu tiên bảng so sánh khi có từ hai lựa chọn trở lên.
+5. **Nhóm cốt lõi** giải thích nền tảng để người mới hiểu và áp dụng được. **Nhóm mở rộng** trả lời các câu hỏi thường gặp về lựa chọn công nghệ, đánh đổi, vận hành, đánh giá chất lượng hoặc trường hợp không nên dùng.
+6. Không thêm câu hỏi để đủ số lượng. Chỉ chọn các câu hỏi có giá trị học tập hoặc hỗ trợ ra quyết định; số lượng tối đa là giới hạn, không phải bắt buộc.
+7. Nội dung cần nhất quán với các node con và ưu tiên liên kết tới khái niệm liên quan thay vì lặp lại phần giải thích chuyên sâu đã có ở node đó.
 
 ## Cấu trúc
 
