@@ -37,6 +37,10 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
 - [Trí tuệ nhân tạo (Artificial Intelligence, AI)](ai/README.md)
   - [Mô hình ngôn ngữ lớn (Large Language Models, LLM)](ai/llm/README.md)
     - [RAG (Retrieval-Augmented Generation)](ai/llm/rag/README.md)
+      - [Chunking](ai/llm/rag/chunking/README.md)
+      - [Embedding](ai/llm/rag/embedding/README.md)
+      - [Retrieval](ai/llm/rag/retrieval/README.md)
+      - [Chỉ mục pgvector (pgvector Index)](ai/llm/rag/pgvector-index/README.md)
 
 ## Quy ước thuật ngữ và URL
 
