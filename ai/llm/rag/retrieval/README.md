@@ -5,7 +5,7 @@
 ## Điều hướng
 - **Node cha:** [RAG](../README.md)
 - **Khái niệm trước:** [Embedding](../embedding/README.md)
-- **Khái niệm sau:** [Reranking](../reranking/README.md)
+- **Khái niệm sau:** [Chỉ mục pgvector](../pgvector-index/README.md)
 
 ## A. 5 câu hỏi cốt lõi
 
@@ -43,5 +43,4 @@ Dữ liệu realtime, phép tính chính xác và tác vụ nghiệp vụ cần 
 
 ## Liên kết liên quan
 - [RAG](../README.md)
-- [Embedding](../embedding/README.md)
-- [Reranking](../reranking/README.md)
+- [Chỉ mục pgvector](../pgvector-index/README.md)
