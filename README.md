@@ -44,6 +44,10 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
       - [Retrieval](ai/llm/rag/retrieval/README.md)
       - [Chỉ mục pgvector (pgvector Index)](ai/llm/rag/pgvector-index/README.md)
 
+## Cập nhật gần đây
+
+- **2026-07-06:** [Chunking trong RAG](ai/llm/rag/chunking/README.md) được mở rộng với chiến lược chọn ranh giới chunk, `chunkSize`/overlap, metadata và ACL, tài liệu phức tạp (PDF/bảng/code), đánh giá retrieval, context assembly và vận hành re-index theo version.
+
 ## Quy ước thuật ngữ và URL
 
 Dùng các từ viết tắt tiếng Anh phổ biến trong ngành khi chúng là tên khái niệm hoặc định danh ổn định, ví dụ: `ai`, `llm`, `rag`, `api`, `db`, `ui`, `ux`.
