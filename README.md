@@ -46,6 +46,7 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
 
 ## Cập nhật gần đây
 
+- **2026-07-06:** [Embedding trong RAG](ai/llm/rag/embedding/README.md) được mở rộng với không gian vector tương thích, chọn model tiếng Việt/chuyên ngành, text và metadata để embedding, metric/normalization/index, hybrid search, đánh giá, re-embed migration, đa ngôn ngữ, cache và ACL.
 - **2026-07-06:** [Chunking trong RAG](ai/llm/rag/chunking/README.md) được mở rộng với chiến lược chọn ranh giới chunk, `chunkSize`/overlap, metadata và ACL, tài liệu phức tạp (PDF/bảng/code), đánh giá retrieval, context assembly và vận hành re-index theo version.
 
 ## Quy ước thuật ngữ và URL
