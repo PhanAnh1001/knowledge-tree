@@ -1,17 +1,18 @@
 {
-  "version": "3.3.0",
+  "version": "3.4.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
   "nodeSchema": {
     "required": ["id", "title", "slug", "type", "path", "parentId", "order", "children"],
+    "optional": ["updatedAt"],
     "types": ["root", "domain", "category", "concept"]
   },
   "nodes": [
     {"id":"knowledge-tree","title":"Knowledge Tree","slug":"knowledge-tree","type":"root","path":"README.md","parentId":null,"order":0,"children":["ai"]},
     {"id":"ai","title":"Trí tuệ nhân tạo (Artificial Intelligence, AI)","slug":"ai","type":"domain","path":"ai/README.md","parentId":"knowledge-tree","order":1,"children":["llm"]},
     {"id":"llm","title":"Mô hình ngôn ngữ lớn (Large Language Models, LLM)","slug":"llm","type":"category","path":"ai/llm/README.md","parentId":"ai","order":1,"children":["rag"]},
-    {"id":"rag","title":"RAG (Retrieval-Augmented Generation)","slug":"rag","type":"concept","path":"ai/llm/rag/README.md","parentId":"llm","order":1,"children":["chunking","embedding","retrieval","pgvector-index"]},
+    {"id":"rag","title":"RAG (Retrieval-Augmented Generation)","slug":"rag","type":"concept","path":"ai/llm/rag/README.md","parentId":"llm","order":1,"children":["chunking","embedding","retrieval","pgvector-index"],"updatedAt":"2026-07-06"},
     {"id":"chunking","title":"Chunking trong RAG","slug":"chunking","type":"concept","path":"ai/llm/rag/chunking/README.md","parentId":"rag","order":1,"children":[]},
     {"id":"embedding","title":"Embedding trong RAG","slug":"embedding","type":"concept","path":"ai/llm/rag/embedding/README.md","parentId":"rag","order":2,"children":[]},
     {"id":"retrieval","title":"Retrieval trong RAG","slug":"retrieval","type":"concept","path":"ai/llm/rag/retrieval/README.md","parentId":"rag","order":3,"children":[]},
