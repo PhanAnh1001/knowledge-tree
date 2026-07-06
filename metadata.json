@@ -14,7 +14,7 @@
     {"id":"llm","title":"Mô hình ngôn ngữ lớn (Large Language Models, LLM)","slug":"llm","type":"category","path":"ai/llm/README.md","parentId":"ai","order":1,"children":["rag"]},
     {"id":"rag","title":"RAG (Retrieval-Augmented Generation)","slug":"rag","type":"concept","path":"ai/llm/rag/README.md","parentId":"llm","order":1,"children":["chunking","embedding","retrieval","pgvector-index"],"updatedAt":"2026-07-06"},
     {"id":"chunking","title":"Chunking trong RAG","slug":"chunking","type":"concept","path":"ai/llm/rag/chunking/README.md","parentId":"rag","order":1,"children":[],"updatedAt":"2026-07-06"},
-    {"id":"embedding","title":"Embedding trong RAG","slug":"embedding","type":"concept","path":"ai/llm/rag/embedding/README.md","parentId":"rag","order":2,"children":[]},
+    {"id":"embedding","title":"Embedding trong RAG","slug":"embedding","type":"concept","path":"ai/llm/rag/embedding/README.md","parentId":"rag","order":2,"children":[],"updatedAt":"2026-07-06"},
     {"id":"retrieval","title":"Retrieval trong RAG","slug":"retrieval","type":"concept","path":"ai/llm/rag/retrieval/README.md","parentId":"rag","order":3,"children":[]},
     {"id":"pgvector-index","title":"Chỉ mục pgvector (pgvector Index)","slug":"pgvector-index","type":"concept","path":"ai/llm/rag/pgvector-index/README.md","parentId":"rag","order":4,"children":[]}
   ],
