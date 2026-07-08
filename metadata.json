@@ -1,5 +1,5 @@
 {
-  "version": "3.7.0",
+  "version": "3.8.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
@@ -9,15 +9,16 @@
     "types": ["root", "domain", "category", "concept"]
   },
   "nodes": [
-    {"id":"knowledge-tree","title":"Knowledge Tree","slug":"knowledge-tree","type":"root","path":"README.md","parentId":null,"order":0,"children":["ai"],"updatedAt":"2026-07-07"},
+    {"id":"knowledge-tree","title":"Knowledge Tree","slug":"knowledge-tree","type":"root","path":"README.md","parentId":null,"order":0,"children":["ai"],"updatedAt":"2026-07-08"},
     {"id":"ai","title":"Trí tuệ nhân tạo (Artificial Intelligence, AI)","slug":"ai","type":"domain","path":"ai/README.md","parentId":"knowledge-tree","order":1,"children":["llm"]},
     {"id":"llm","title":"Mô hình ngôn ngữ lớn (Large Language Models, LLM)","slug":"llm","type":"category","path":"ai/llm/README.md","parentId":"ai","order":1,"children":["rag"]},
-    {"id":"rag","title":"RAG (Retrieval-Augmented Generation)","slug":"rag","type":"concept","path":"ai/llm/rag/README.md","parentId":"llm","order":1,"children":["chunking","embedding","retrieval","pgvector-index","rag-use-cases"],"updatedAt":"2026-07-07"},
+    {"id":"rag","title":"RAG (Retrieval-Augmented Generation)","slug":"rag","type":"concept","path":"ai/llm/rag/README.md","parentId":"llm","order":1,"children":["chunking","embedding","retrieval","recall","pgvector-index","rag-use-cases"],"updatedAt":"2026-07-08"},
     {"id":"chunking","title":"Chunking trong RAG","slug":"chunking","type":"concept","path":"ai/llm/rag/chunking/README.md","parentId":"rag","order":1,"children":[],"updatedAt":"2026-07-06"},
     {"id":"embedding","title":"Embedding trong RAG","slug":"embedding","type":"concept","path":"ai/llm/rag/embedding/README.md","parentId":"rag","order":2,"children":[],"updatedAt":"2026-07-06"},
     {"id":"retrieval","title":"Retrieval trong RAG","slug":"retrieval","type":"concept","path":"ai/llm/rag/retrieval/README.md","parentId":"rag","order":3,"children":[],"updatedAt":"2026-07-06"},
-    {"id":"pgvector-index","title":"Chỉ mục pgvector (pgvector Index)","slug":"pgvector-index","type":"concept","path":"ai/llm/rag/pgvector-index/README.md","parentId":"rag","order":4,"children":[]},
-    {"id":"rag-use-cases","title":"Các trường hợp ứng dụng RAG (RAG Use Cases)","slug":"use-cases","type":"concept","path":"ai/llm/rag/use-cases/README.md","parentId":"rag","order":5,"children":[],"updatedAt":"2026-07-07"}
+    {"id":"recall","title":"Recall trong RAG","slug":"recall","type":"concept","path":"ai/llm/rag/recall/README.md","parentId":"rag","order":4,"children":[],"updatedAt":"2026-07-08"},
+    {"id":"pgvector-index","title":"Chỉ mục pgvector (pgvector Index)","slug":"pgvector-index","type":"concept","path":"ai/llm/rag/pgvector-index/README.md","parentId":"rag","order":5,"children":[]},
+    {"id":"rag-use-cases","title":"Các trường hợp ứng dụng RAG (RAG Use Cases)","slug":"use-cases","type":"concept","path":"ai/llm/rag/use-cases/README.md","parentId":"rag","order":6,"children":[],"updatedAt":"2026-07-07"}
   ],
   "pathIndex": {
     "README.md":"knowledge-tree",
@@ -27,6 +28,7 @@
     "ai/llm/rag/chunking/README.md":"chunking",
     "ai/llm/rag/embedding/README.md":"embedding",
     "ai/llm/rag/retrieval/README.md":"retrieval",
+    "ai/llm/rag/recall/README.md":"recall",
     "ai/llm/rag/pgvector-index/README.md":"pgvector-index",
     "ai/llm/rag/use-cases/README.md":"rag-use-cases"
   }
