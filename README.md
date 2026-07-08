@@ -42,11 +42,13 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
       - [Chunking](ai/llm/rag/chunking/README.md)
       - [Embedding](ai/llm/rag/embedding/README.md)
       - [Retrieval](ai/llm/rag/retrieval/README.md)
+      - [Recall trong RAG](ai/llm/rag/recall/README.md)
       - [Chỉ mục pgvector (pgvector Index)](ai/llm/rag/pgvector-index/README.md)
       - [Các trường hợp ứng dụng RAG (RAG Use Cases)](ai/llm/rag/use-cases/README.md)
 
 ## Cập nhật gần đây
 
+- **2026-07-08:** [Recall trong RAG](ai/llm/rag/recall/README.md) được thêm mới với định nghĩa Recall/Recall@k, cách đo bằng evaluation dataset, quan hệ với precision/MRR/nDCG, cách tăng recall bằng hybrid search, query rewrite, chunking, metadata filter, đánh giá tiếng Việt/đa ngôn ngữ và theo dõi production.
 - **2026-07-07:** [Các trường hợp ứng dụng RAG](ai/llm/rag/use-cases/README.md) bổ sung bản đồ use case theo mục tiêu, ngành, loại dữ liệu, mức rủi ro và kiến trúc; bao gồm enterprise knowledge, CSKH, developer/SRE, sales/e-commerce, legal/compliance, finance/insurance, healthcare, education, operations/logistics, research và multimodal/graph/agentic RAG.
 - **2026-07-06:** [Retrieval trong RAG](ai/llm/rag/retrieval/README.md) được mở rộng với pipeline offline/online, dense–sparse–hybrid retrieval, ACL và versioning, reranking/MMR/threshold, query rewrite, grounded abstention, đánh giá, quan sát production và chọn FAISS, pgvector, Qdrant hoặc Elasticsearch/OpenSearch.
 - **2026-07-06:** [Embedding trong RAG](ai/llm/rag/embedding/README.md) được mở rộng với không gian vector tương thích, chọn model tiếng Việt/chuyên ngành, text và metadata để embedding, metric/normalization/index, hybrid search, đánh giá, re-embed migration, đa ngôn ngữ, cache và ACL.
