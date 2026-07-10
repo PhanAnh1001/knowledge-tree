@@ -46,9 +46,11 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
       - [Chỉ mục pgvector (pgvector Index)](ai/llm/rag/pgvector-index/README.md)
       - [Các trường hợp ứng dụng RAG (RAG Use Cases)](ai/llm/rag/use-cases/README.md)
       - [RAGAS trong RAG](ai/llm/rag/ragas/README.md)
+    - [Chain of Thought (CoT)](ai/llm/cot/README.md)
 
 ## Cập nhật gần đây
 
+- **2026-07-10:** [Chain of Thought (CoT)](ai/llm/cot/README.md) được thêm mới với nền tảng CoT, Few-shot/Zero-shot CoT, Self-Consistency, cách chọn giữa Prompt Chaining, Least-to-Most, Tree of Thoughts, ReAct và Program of Thoughts, kết hợp RAG/tool calling, giới hạn về faithfulness và checklist đánh giá production.
 - **2026-07-08:** [RAGAS trong RAG](ai/llm/rag/ragas/README.md) được thêm mới với định nghĩa RAGAS/Ragas, dữ liệu evaluation sample, Context Precision, Context Recall, Faithfulness, Answer Relevancy, testset generation, threshold, đánh giá tiếng Việt/đa ngôn ngữ và cách tích hợp vào Java Spring/Next.js.
 - **2026-07-08:** [Recall trong RAG](ai/llm/rag/recall/README.md) được thêm mới với định nghĩa Recall/Recall@k, cách đo bằng evaluation dataset, quan hệ với precision/MRR/nDCG, cách tăng recall bằng hybrid search, query rewrite, chunking, metadata filter, đánh giá tiếng Việt/đa ngôn ngữ và theo dõi production.
 - **2026-07-07:** [Các trường hợp ứng dụng RAG](ai/llm/rag/use-cases/README.md) bổ sung bản đồ use case theo mục tiêu, ngành, loại dữ liệu, mức rủi ro và kiến trúc; bao gồm enterprise knowledge, CSKH, developer/SRE, sales/e-commerce, legal/compliance, finance/insurance, healthcare, education, operations/logistics, research và multimodal/graph/agentic RAG.
