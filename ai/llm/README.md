@@ -4,14 +4,15 @@
 
 ## Vai trò trong cây kiến thức
 
-*Mô hình ngôn ngữ lớn* (*Large Language Model — LLM*) là mô hình AI được huấn luyện trên lượng lớn dữ liệu ngôn ngữ để hiểu, tóm tắt, sinh và biến đổi văn bản. Các kỹ thuật như **RAG**, *prompt engineering*, *tool calling* và *fine-tuning* giúp đưa LLM vào ứng dụng thực tế một cách đáng tin cậy hơn.
+*Mô hình ngôn ngữ lớn* (*Large Language Model — LLM*) là mô hình AI được huấn luyện trên lượng lớn dữ liệu ngôn ngữ để hiểu, tóm tắt, sinh và biến đổi văn bản. Các kỹ thuật như **RAG**, **Chain of Thought (CoT)**, *prompt engineering*, *tool calling* và *fine-tuning* giúp đưa LLM vào ứng dụng thực tế một cách đáng tin cậy hơn.
 
 ## Điều hướng
 
 - **Node cha:** [Trí tuệ nhân tạo (AI)](../README.md)
-- **Node con:** [RAG (Retrieval-Augmented Generation)](rag/README.md)
+- **Node con:** [RAG (Retrieval-Augmented Generation)](rag/README.md), [Chain of Thought (CoT)](cot/README.md)
 - **Khái niệm trước / sau trong nhánh:** Chưa có node cùng cấp để điều hướng.
 
 ## Nhánh con
 
 1. [RAG (Retrieval-Augmented Generation)](rag/README.md) — Kết hợp truy xuất tri thức với sinh câu trả lời từ LLM.
+2. [Chain of Thought (CoT)](cot/README.md) — Tổ chức suy luận nhiều bước, phân rã bài toán và kiểm chứng kết quả.
