@@ -13,7 +13,7 @@ CoT không tự bảo đảm câu trả lời đúng. Một chuỗi giải thíc
 - **Node cha:** [Mô hình ngôn ngữ lớn (LLM)](../README.md)
 - **Node con:** Chưa có.
 - **Khái niệm trước trong cùng nhánh:** [RAG (Retrieval-Augmented Generation)](../rag/README.md)
-- **Khái niệm sau trong cùng nhánh:** Chưa có.
+- **Khái niệm sau trong cùng nhánh:** [Minimal Reproducible Example (MRE)](../mre/README.md)
 
 ## A. 5 câu hỏi cốt lõi
 
@@ -493,7 +493,7 @@ Dataset version
 3. Xuezhi Wang và cộng sự, [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171), 2022.
 4. Denny Zhou và cộng sự, [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2205.10625), 2022.
 5. Shunyu Yao và cộng sự, [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601), 2023.
-6. Shunyu Yao và cộng sự, [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629), 2022.
+6. Shunyu Yao và cộng sự, [ReAct: Synergizing Reasoning and Acting in Large Language Models](https://arxiv.org/abs/2210.03629), 2022.
 7. Wenhu Chen và cộng sự, [Program of Thoughts Prompting](https://arxiv.org/abs/2211.12588), 2022.
 8. Miles Turpin và cộng sự, [Language Models Don't Always Say What They Think](https://arxiv.org/abs/2305.04388), 2023.
 9. Yanda Chen và cộng sự, [Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410), 2025.
