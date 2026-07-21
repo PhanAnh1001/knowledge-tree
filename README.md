@@ -47,11 +47,13 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
       - [Các trường hợp ứng dụng RAG (RAG Use Cases)](ai/llm/rag/use-cases/README.md)
       - [RAGAS trong RAG](ai/llm/rag/ragas/README.md)
       - [ETL tài liệu PDF kỹ thuật cho RAG](ai/llm/rag/etl/README.md)
+        - [OCR và trích xuất ảnh con bằng mô hình mã nguồn mở](ai/llm/rag/etl/ocr-image-extraction/README.md)
     - [Chain of Thought (CoT)](ai/llm/cot/README.md)
     - [Minimal Reproducible Example (MRE) cho AI và OCR tài liệu kỹ thuật](ai/llm/mre/README.md)
 
 ## Cập nhật gần đây
 
+- **2026-07-21:** [OCR và trích xuất ảnh con bằng mô hình mã nguồn mở](ai/llm/rag/etl/ocr-image-extraction/README.md) được thêm mới với kiến trúc page router cho PDF số, scan và vector; PaddleOCR + PP-StructureV3; PaddleOCR-VL/MinerU fallback; quy tắc crop figure; sizing GPU 64 GB; quality gate, license và lộ trình scale từ 50.000 đến 1.000.000 PDF.
 - **2026-07-21:** [ETL tài liệu PDF kỹ thuật cho RAG](ai/llm/rag/etl/README.md) được thêm mới với kiến trúc router theo file/trang, fast parser–OCR–layout–form–VLM fallback, canonical document model, queue-driven workers, idempotency, versioning, ACL, quality gate, chunking, hybrid search và lộ trình scale từ 50.000 đến 1.000.000 PDF.
 - **2026-07-18:** [Minimal Reproducible Example (MRE) cho AI và OCR tài liệu kỹ thuật](ai/llm/mre/README.md) được thêm mới với cách rút PDF lớn thành case nhỏ, khóa prompt/model/OCR, định nghĩa expected–actual cho đề mục và hình ảnh, xử lý tài liệu máy móc đa ngành, bảo mật dữ liệu, đo lỗi không xác định và chuyển MRE thành regression suite.
 - **2026-07-10:** [Chain of Thought (CoT)](ai/llm/cot/README.md) được thêm mới với nền tảng CoT, Few-shot/Zero-shot CoT, Self-Consistency, cách chọn giữa Prompt Chaining, Least-to-Most, Tree of Thoughts, ReAct và Program of Thoughts, kết hợp RAG/tool calling, giới hạn về faithfulness và checklist đánh giá production.
