@@ -1,5 +1,5 @@
 {
-  "version": "3.12.0",
+  "version": "3.13.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
@@ -22,7 +22,8 @@
     {"id":"pgvector-index","title":"Chỉ mục pgvector (pgvector Index)","slug":"pgvector-index","type":"concept","path":"ai/llm/rag/pgvector-index/README.md","parentId":"rag","order":5,"children":[]},
     {"id":"rag-use-cases","title":"Các trường hợp ứng dụng RAG (RAG Use Cases)","slug":"use-cases","type":"concept","path":"ai/llm/rag/use-cases/README.md","parentId":"rag","order":6,"children":[],"updatedAt":"2026-07-07"},
     {"id":"ragas","title":"RAGAS trong RAG","slug":"ragas","type":"concept","path":"ai/llm/rag/ragas/README.md","parentId":"rag","order":7,"children":[],"updatedAt":"2026-07-08"},
-    {"id":"rag-etl","title":"ETL tài liệu PDF kỹ thuật cho RAG","slug":"etl","type":"concept","path":"ai/llm/rag/etl/README.md","parentId":"rag","order":8,"children":[],"updatedAt":"2026-07-21"}
+    {"id":"rag-etl","title":"ETL tài liệu PDF kỹ thuật cho RAG","slug":"etl","type":"concept","path":"ai/llm/rag/etl/README.md","parentId":"rag","order":8,"children":["ocr-image-extraction"],"updatedAt":"2026-07-21"},
+    {"id":"ocr-image-extraction","title":"OCR và trích xuất ảnh con bằng mô hình mã nguồn mở","slug":"ocr-image-extraction","type":"concept","path":"ai/llm/rag/etl/ocr-image-extraction/README.md","parentId":"rag-etl","order":1,"children":[],"updatedAt":"2026-07-21"}
   ],
   "pathIndex": {
     "README.md":"knowledge-tree",
@@ -38,6 +39,7 @@
     "ai/llm/rag/pgvector-index/README.md":"pgvector-index",
     "ai/llm/rag/use-cases/README.md":"rag-use-cases",
     "ai/llm/rag/ragas/README.md":"ragas",
-    "ai/llm/rag/etl/README.md":"rag-etl"
+    "ai/llm/rag/etl/README.md":"rag-etl",
+    "ai/llm/rag/etl/ocr-image-extraction/README.md":"ocr-image-extraction"
   }
 }
