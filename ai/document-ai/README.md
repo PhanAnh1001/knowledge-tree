@@ -13,7 +13,7 @@ Document AI khác với NLP thuần ở chỗ nội dung không chỉ nằm tron
 - **Node cha:** [Trí tuệ nhân tạo (AI)](../README.md)
 - **Node con:** [Phân tích bố cục tài liệu (Document Layout Analysis)](document-layout-analysis/README.md)
 - **Nhánh trước cùng cấp:** [Mô hình ngôn ngữ lớn (LLM)](../llm/README.md)
-- **Nhánh sau cùng cấp:** Chưa có.
+- **Nhánh sau cùng cấp:** [AI đa phương thức (Multimodal AI)](../multimodal-ai/README.md)
 
 ## Nhánh con
 
