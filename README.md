@@ -52,9 +52,12 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
     - [Minimal Reproducible Example (MRE) cho AI và OCR tài liệu kỹ thuật](ai/llm/mre/README.md)
   - [Trí tuệ tài liệu (Document AI)](ai/document-ai/README.md)
     - [Phân tích bố cục tài liệu (Document Layout Analysis)](ai/document-ai/document-layout-analysis/README.md)
+  - [AI đa phương thức (Multimodal AI)](ai/multimodal-ai/README.md)
+    - [Kiểm thử hồi quy đa phương thức (Multimodal Regression Engineering)](ai/multimodal-ai/multimodal-regression-engineering/README.md)
 
 ## Cập nhật gần đây
 
+- **2026-07-27:** [Kiểm thử hồi quy đa phương thức (Multimodal Regression Engineering)](ai/multimodal-ai/multimodal-regression-engineering/README.md) được thêm mới với 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về test case có phiên bản, kim tự tháp regression, oracle/grader/metric, release gate theo slice và rủi ro, xử lý tính không xác định, metamorphic testing, khoanh vùng lỗi pipeline PDF/OCR, calibration judge, lineage, quality–cost–latency, safety và lựa chọn công cụ.
 - **2026-07-27:** [Phân tích bố cục tài liệu (Document Layout Analysis)](ai/document-ai/document-layout-analysis/README.md) được thêm mới với 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về physical/logical layout, reading order, OCR, taxonomy, dataset và metric, lựa chọn LayoutParser/PaddleOCR/Docling/Unstructured/Surya, domain adaptation, scale lớn và tích hợp RAG.
 - **2026-07-21:** [OCR và trích xuất ảnh con bằng mô hình mã nguồn mở](ai/llm/rag/etl/ocr-image-extraction/README.md) được thêm mới với kiến trúc page router cho PDF số, scan và vector; PaddleOCR + PP-StructureV3; PaddleOCR-VL/MinerU fallback; quy tắc crop figure; sizing GPU 64 GB; quality gate, license và lộ trình scale từ 50.000 đến 1.000.000 PDF.
 - **2026-07-21:** [ETL tài liệu PDF kỹ thuật cho RAG](ai/llm/rag/etl/README.md) được thêm mới với kiến trúc router theo file/trang, fast parser–OCR–layout–form–VLM fallback, canonical document model, queue-driven workers, idempotency, versioning, ACL, quality gate, chunking, hybrid search và lộ trình scale từ 50.000 đến 1.000.000 PDF.
