@@ -51,6 +51,7 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
       - [Ứng dụng MCP với Codex cho dự án RAG tài liệu kỹ thuật](ai/llm/rag/mcp-codex-workflow/README.md)
     - [Chain of Thought (CoT)](ai/llm/cot/README.md)
     - [Minimal Reproducible Example (MRE) cho AI và OCR tài liệu kỹ thuật](ai/llm/mre/README.md)
+    - [Model Context Protocol (MCP) trong tối ưu context và luồng DEV](ai/llm/mcp/README.md)
   - [Trí tuệ tài liệu (Document AI)](ai/document-ai/README.md)
     - [Phân tích bố cục tài liệu (Document Layout Analysis)](ai/document-ai/document-layout-analysis/README.md)
   - [AI đa phương thức (Multimodal AI)](ai/multimodal-ai/README.md)
@@ -58,6 +59,7 @@ Tên thư mục dùng chữ thường, không dấu. Khi thuật ngữ có từ 
 
 ## Cập nhật gần đây
 
+- **2026-07-29:** [Model Context Protocol (MCP) trong tối ưu context và luồng DEV](ai/llm/mcp/README.md) được thêm mới với 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về progressive discovery, resource on demand, programmatic tool calling/code mode, thiết kế output có giới hạn, kiến trúc MCP cho SDLC, portability, observability, bảo mật, STDIO/Streamable HTTP, đánh giá token–quality–latency và anti-pattern.
 - **2026-07-29:** [Ứng dụng MCP với Codex cho dự án RAG tài liệu kỹ thuật](ai/llm/rag/mcp-codex-workflow/README.md) được thêm mới với kiến trúc tách development control plane và runtime data plane; 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về MCP resources/tools/prompts, workflow evidence-first từ issue đến PR, `AGENTS.md`, `.codex/config.toml`, STDIO/Streamable HTTP, ETL/OCR, trace debugging, eval/release gate, sandbox, approval, security và lộ trình rollout.
 - **2026-07-27:** [Kiểm thử hồi quy đa phương thức (Multimodal Regression Engineering)](ai/multimodal-ai/multimodal-regression-engineering/README.md) được thêm mới với 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về test case có phiên bản, kim tự tháp regression, oracle/grader/metric, release gate theo slice và rủi ro, xử lý tính không xác định, metamorphic testing, khoanh vùng lỗi pipeline PDF/OCR, calibration judge, lineage, quality–cost–latency, safety và lựa chọn công cụ.
 - **2026-07-27:** [Phân tích bố cục tài liệu (Document Layout Analysis)](ai/document-ai/document-layout-analysis/README.md) được thêm mới với 5 câu hỏi cốt lõi và 8 câu hỏi phổ biến về physical/logical layout, reading order, OCR, taxonomy, dataset và metric, lựa chọn LayoutParser/PaddleOCR/Docling/Unstructured/Surya, domain adaptation, scale lớn và tích hợp RAG.
