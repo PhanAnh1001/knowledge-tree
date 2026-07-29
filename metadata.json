@@ -1,5 +1,5 @@
 {
-  "version": "3.17.0",
+  "version": "3.18.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
@@ -80,7 +80,7 @@
       "children": [
         "document-layout-analysis"
       ],
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-29"
     },
     {
       "id": "multimodal-ai",
@@ -103,8 +103,21 @@
       "path": "ai/document-ai/document-layout-analysis/README.md",
       "parentId": "document-ai",
       "order": 1,
+      "children": [
+        "heading-recognition"
+      ],
+      "updatedAt": "2026-07-29"
+    },
+    {
+      "id": "heading-recognition",
+      "title": "Nhận diện đề mục trong PDF scan bằng OCR và Gemma 4 (Heading Recognition)",
+      "slug": "heading-recognition",
+      "type": "concept",
+      "path": "ai/document-ai/document-layout-analysis/heading-recognition/README.md",
+      "parentId": "document-layout-analysis",
+      "order": 1,
       "children": [],
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-29"
     },
     {
       "id": "multimodal-regression-engineering",
@@ -290,6 +303,7 @@
     "ai/document-ai/README.md": "document-ai",
     "ai/multimodal-ai/README.md": "multimodal-ai",
     "ai/document-ai/document-layout-analysis/README.md": "document-layout-analysis",
+    "ai/document-ai/document-layout-analysis/heading-recognition/README.md": "heading-recognition",
     "ai/multimodal-ai/multimodal-regression-engineering/README.md": "multimodal-regression-engineering",
     "ai/llm/rag/README.md": "rag",
     "ai/llm/cot/README.md": "cot",
