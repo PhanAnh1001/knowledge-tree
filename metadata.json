@@ -1,5 +1,5 @@
 {
-  "version": "3.18.0",
+  "version": "3.19.0",
   "locale": "vi-VN",
   "rootId": "knowledge-tree",
   "description": "Metadata cho cây kiến thức Knowledge Tree. Mỗi node tương ứng với một README.md trong repository.",
@@ -181,8 +181,10 @@
       "path": "ai/llm/mcp/README.md",
       "parentId": "llm",
       "order": 4,
-      "children": [],
-      "updatedAt": "2026-07-29"
+      "children": [
+        "mcp-protocol-read-write"
+      ],
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "chunking",
@@ -294,6 +296,17 @@
       "order": 1,
       "children": [],
       "updatedAt": "2026-07-21"
+    },
+    {
+      "id": "mcp-protocol-read-write",
+      "title": "Giao thức MCP và phân biệt đọc/ghi (MCP Protocol and Read/Write)",
+      "slug": "protocol-read-write",
+      "type": "concept",
+      "path": "ai/llm/mcp/protocol-read-write/README.md",
+      "parentId": "mcp",
+      "order": 1,
+      "children": [],
+      "updatedAt": "2026-10-14"
     }
   ],
   "pathIndex": {
@@ -318,6 +331,7 @@
     "ai/llm/rag/ragas/README.md": "ragas",
     "ai/llm/rag/etl/README.md": "rag-etl",
     "ai/llm/rag/mcp-codex-workflow/README.md": "mcp-codex-workflow",
-    "ai/llm/rag/etl/ocr-image-extraction/README.md": "ocr-image-extraction"
+    "ai/llm/rag/etl/ocr-image-extraction/README.md": "ocr-image-extraction",
+    "ai/llm/mcp/protocol-read-write/README.md": "mcp-protocol-read-write"
   }
 }
